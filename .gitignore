@@ -1,0 +1,11 @@
+# IGNORE YII FRAMEWORK STUFF
+assets/*
+!.gitignore
+application.log
+
+protected/composer.lock
+!protected/vendor/yiisoft/yii/framework/gii/generators/crud/templates/custom/*
+!protected/vendor/yiisoft/yii/framework/gii/generators/model/templates/custom/*
+!protected/vendor/yiisoft/yii/framework/gii/generators/crud/CrudCode_custom.php
+protected/vendor/*
+protected/runtime/*
