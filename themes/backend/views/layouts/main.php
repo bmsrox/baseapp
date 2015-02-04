@@ -32,7 +32,7 @@
         $this->widget('Navbar', array(
             //'brand'=>CHtml::image(Yii::app()->baseUrl . "/images/logo_neocds.png", ""),
             'brand'=>'Administração',
-            'brandUrl'=>$this->createUrl('site/index'),
+            'brandUrl'=>$this->createUrl('default/index'),
             'htmlOptions'=>array('class'=>'navbar-right'),
             'items'=>array(
                 array(
@@ -42,7 +42,7 @@
                     'itemsCssClass'=>'dropdown-menu',
                     'items'=>array(
                             array('url'=>'#', 'label'=>Yii::t('app','Change Password')),
-                            array('url'=>array('site/logout'), 'label'=>Yii::t('app','Logout'))
+                            array('url'=>array('default/logout'), 'label'=>Yii::t('app','Logout'))
                     )
                 ),
             )

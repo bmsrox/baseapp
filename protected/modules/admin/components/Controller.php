@@ -21,4 +21,7 @@ class Controller extends CController
 	 */
 	public $breadcrumbs=array();
 
+	public function init(){
+		Yii::app()->getClientScript()->registerCoreScript('jquery');
+	}
 }
