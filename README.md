@@ -11,6 +11,12 @@ enter in the folder project
 
 	cd path/project/protected && composer install
 
+after rename the files
+
+    protected/vendor/yiisoft/yii/framework/gii/generators/crud/CrudCode_custom.php
+    to
+	protected/vendor/yiisoft/yii/framework/gii/generators/crud/CrudCode.php
+
 after run composer, execute:
 
 	cd vendor/yiisoft/yii/framework/ && php yiic webapp path/project
