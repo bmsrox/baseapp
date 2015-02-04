@@ -11,7 +11,7 @@
                             <img src="<?php echo Yii::app()->theme->baseUrl; ?>/img/avatar4.png" class="img-circle" alt="User Image" />
                         </div>
                         <div class="pull-left info">
-                            <p>Hello, <?= ucfirst(Yii::app()->user->name); ?></p>
+                            <p><?php echo Yii::t('app','Hello'); ?>, <?php echo ucfirst(Yii::app()->user->name); ?></p>
                             <a><i class="fa fa-circle text-success"></i> Online</a>
                         </div>
                     </div>
@@ -31,8 +31,7 @@
                     <?php $this->widget('zii.widgets.CMenu',array(
                             'htmlOptions'=>array('class'=>'sidebar-menu'),
                             'items'=>array(
-                                array('label'=>Yii::t('app', 'Dashboard'), 'url'=>array('site/index')),
-                                array('label'=>Yii::t('app', 'User'), 'url'=>array('user/index'))
+                                array('label'=>Yii::t('app', 'Dashboard'), 'url'=>array('default/index'))
                             ),
                     )); ?>
 
@@ -53,7 +52,7 @@
                     'links'=>$this->breadcrumbs,
                     'tagName'=>'ol',
                     'htmlOptions'=>array('class'=>'breadcrumb'),
-                    'homeLink'=>CHtml::tag('li', array(),CHtml::link(Yii::t(Yii::app()->language,'Home'), array('/adm/default/index')),true),
+                    'homeLink'=>CHtml::tag('li', array(),CHtml::link(Yii::t('app','Home'), array('/admin/default/index')),true),
                     'activeLinkTemplate'=>'<li><a href="{url}">{label}</a></li>',
                     'inactiveLinkTemplate'=>'<li class="active">{label}</li>',
                     'separator'=>'',
