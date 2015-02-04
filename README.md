@@ -11,7 +11,7 @@ enter in the folder project
 
 	cd path/project/protected && composer install
 
-after rename the files
+after rename the file
 
     protected/vendor/yiisoft/yii/framework/gii/generators/crud/CrudCode_custom.php
     to
