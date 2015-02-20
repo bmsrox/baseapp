@@ -22,7 +22,7 @@
 
 			</div>
 			<div class="footer">
-				<?php echo CHtml::submitButton(Yii::t('app', 'Sign me In'), array('class'=>'btn bg-olive btn-block')); ?>
+				<?php echo CHtml::submitButton(Yii::t('app', 'Sign me In'), array('class'=>'btn bg-blue btn-block')); ?>
 			</div>
 
 <?php $this->endWidget(); ?>
