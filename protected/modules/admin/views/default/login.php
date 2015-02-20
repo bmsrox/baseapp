@@ -19,7 +19,6 @@
 					<?php echo $form->passwordField($model,'password', array('class'=>'form-control', 'placeholder'=>Yii::t('app', 'Password'))); ?>
 					<?php echo $form->error($model,'password'); ?>
 				</div>
-
 			</div>
 			<div class="footer">
 				<?php echo CHtml::submitButton(Yii::t('app', 'Sign me In'), array('class'=>'btn bg-blue btn-block')); ?>
