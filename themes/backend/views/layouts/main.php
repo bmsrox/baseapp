@@ -36,6 +36,30 @@
             'htmlOptions'=>array('class'=>'navbar-right'),
             'items'=>array(
                 array(
+                    'class'=>'Messages',
+                    'htmlOptions'=>array('class'=>'dropdown messages-menu'),
+                    'icon'=>'fa fa-envelope',
+                    'itemsCssClass'=>'dropdown-menu',
+                    'labelHeader'=>array('title'=>'You have {n} messages|You have {n} messages', 'params'=>3),
+                    'labelFooter'=>array('title'=>'See All Messages'),
+                    'badge'=>array('class'=>'label label-success', 'value'=>4),
+                    'items'=>array(
+                            array('title'=>'Support Team', 'url'=>'#','icon'=>'fa fa-clock-o','value'=>'Why not buy a new awesome theme?')
+                    )
+                ),
+                 array(
+                    'class'=>'Notifications',
+                    'htmlOptions'=>array('class'=>'dropdown notifications-menu'),
+                    'icon'=>'fa fa-warning',
+                    'itemsCssClass'=>'dropdown-menu',
+                    'labelHeader'=>array('title'=>'You have {n} notification|You have {n} notifications', 'params'=>10),
+                    'labelFooter'=>array('title'=>'View All'),
+                    'badge'=>array('class'=>'label label-warning', 'value'=>16),
+                    'items'=>array(
+                            array('url'=>'#','icon'=>'ion ion-ios7-people info','value'=>'Why not buy a new awesome theme?')
+                    )
+                ),
+                array(
                     'class'=>'Users',
                     'htmlOptions'=>array('class'=>'dropdown user'),
                     'icon'=>'glyphicon glyphicon-user',
