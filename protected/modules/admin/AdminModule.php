@@ -14,7 +14,7 @@ class AdminModule extends CWebModule
 			'admin.extensions.*'
 		));
 
-		Yii::app()->theme = "backend";
+		Yii::app()->theme = "adminLTE-1.0";
 
 	}
 
